@@ -25,28 +25,15 @@ namespace WPFWinkel
     /// </summary>
     public partial class WinkelPagina : Page
     {
-        //private List<Artikel> winkelWagen = new List<Artikel>();
-        //private List<Artikel> items = new List<Artikel>();
-
+        
         public WinkelPagina()
         {
             InitializeComponent();
-            //SetupData();
-
+            
             AssortimentBox.ItemsSource = MainWindow.winkellijst;
             WinkelWagenBox.ItemsSource = MainWindow.winkelmandje;
         }
-
-        /*private void SetupData() // gooit wat data in het programma
-        {
-            // Gebruikersnaam demoGebruikersnaam = new Gebruikersnaam(); // pas nodig wanneer er ingelogd kan worden            
-            items.Add(new Artikel { Naam = "Boter", Hoeveelheid = 12, Prijs = 2M, Verkoper = "Admin" }); // creerd een artikel
-            items.Add(new Artikel { Naam = "Kaas", Hoeveelheid = 8, Prijs = 3M, Verkoper = "Admin" }); // creerd een artikel
-            items.Add(new Artikel { Naam = "Eieren", Hoeveelheid = 40, Prijs = 1M, Verkoper = "Admin" }); // creerd een artikel
-
-            //winkel.Verkoper = "Boer Harms";
-        }*/
-
+        
         private void Kwanteit_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -104,9 +91,6 @@ namespace WPFWinkel
                     //stap 4 informatie zichtbaarmaken
                     AssortimentBox.Items.Refresh(); // zorgt ervoor dat de assortimentbox 'up to date' is
                     WinkelWagenBox.Items.Refresh(); // zorgt ervoor dat de winkelwagenbox 'up to date' is
-
-                    //MessageBox.Show(GekozenHoeveelheid.ToString()); // test of de int goed wordt gepakt.
-                    //MessageBox.Show(geselcteerdeArtikel); // test of het geselecteerde artikel goed wordt gepakt    
                 }
             }
         }
@@ -127,7 +111,6 @@ namespace WPFWinkel
                 totaleKosten += (aankoopHoeveelheid * Artikel.Prijs);
             }
             printDocument += (System.Environment.NewLine + System.Environment.NewLine + "Totale kosten: €" + totaleKosten);
-            //System.Windows.MessageBox.Show(printDocument); // test de de regels die geprint moeten worden
 
             Microsoft.Win32.SaveFileDialog saveFileDialog = new Microsoft.Win32.SaveFileDialog();
             saveFileDialog.Filter = "Text file (*.txt)|*.txt|C# file (*.cs)|*.cs";
@@ -157,8 +140,7 @@ namespace WPFWinkel
                 totaleKosten += (aankoopHoeveelheid * Artikel.Prijs);
             }
             printDocument += (System.Environment.NewLine + System.Environment.NewLine + "Totale kosten: €" + totaleKosten);
-            //System.Windows.MessageBox.Show(printDocument); // test de de regels die geprint moeten worden
-
+            
             Microsoft.Win32.SaveFileDialog saveFileDialog = new Microsoft.Win32.SaveFileDialog();
             saveFileDialog.Filter = "Text file (*.txt)|*.txt|C# file (*.cs)|*.cs";
             if (saveFileDialog.ShowDialog() == true)

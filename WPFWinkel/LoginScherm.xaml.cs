@@ -46,8 +46,7 @@ namespace WPFWinkel
 
                         mainWin.GebruikersnaamLabel.Content = IngegevenGebruikersnaam;
 
-                        //gebruikersnaamLabel.Content = IngegevenGebruikersnaam;
-                        CombinatieOnjuist = false;
+                       CombinatieOnjuist = false;
                     }
                 }
             }

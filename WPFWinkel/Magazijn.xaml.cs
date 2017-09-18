@@ -25,18 +25,7 @@ namespace WPFWinkel
     /// </summary>
     public partial class Magazijn : Page
     {
-        /*public List<Artikel> NieweWinkelLijst
-        {
-            get
-            {
-                return new List<Artikel>{
-                new Artikel { Naam = "Boter", Hoeveelheid = 12, Prijs = 2M, Verkoper = "Admin" }, // creerd een artikel
-                new Artikel { Naam = "Kaas", Hoeveelheid = 8, Prijs = 3M, Verkoper = "Admin" }, // creerd een artikel
-                new Artikel { Naam = "Eieren", Hoeveelheid = 40, Prijs = 1M, Verkoper = "Admin" } // creerd een artikel
-            };
-            }
-        }*/
-
+        
         public Magazijn()
         {
             InitializeComponent();

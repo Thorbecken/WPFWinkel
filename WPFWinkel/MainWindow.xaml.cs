@@ -38,40 +38,6 @@ namespace WPFWinkel
             WinkelLader();
         }
 
-        private void winkelMagazijnObject_Loaded(object sender, RoutedEventArgs e)
-        {
-            //WebWinkelUI.ViewModel.WinkelMagazijn winkelMagazijnObject = new WebWinkelUI.ViewModel.WinkelMagazijn();
-            //winkelMagazijnObject.LaadArtikelen();
-
-            //Hoofdscherm.DataContext = winkelMagazijnObject;
-        }
-        /*private void OnPropertyChanged(string propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }*/
-        #region Oudecode
-
-        /*private void StudentViewControl_Loaded(object sender, RoutedEventArgs e)
-        {
-            ViewModel.WinkelMagazijn WinkelMagazijnObject = new ViewModel.WinkelMagazijn();
-            //WinkelMagazijnObject.LaadWinkelWagen();
-
-            //magazijnListbox.Itemsource = WinkelMagazijnObject;
-        }*/
-
-        /*private void AssortimentBox_Loaded(Object sender, RoutedEventArgs e)
-        {
-            WebWinkelUI.ViewModel.WinkelMagazijn winkelMagazijnObject = new ViewModel.WinkelMagazijn();
-            winkelMagazijnObject.LaadWinkelWagen();
-            AssortimentBox.Datacontext = winkelMagazijnObject;
-        }*/
-        #endregion
-
-
         private void WinkelLader() // Start de app op met de WinkelPagina
         {
 
