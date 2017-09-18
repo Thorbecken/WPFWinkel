@@ -1,0 +1,20 @@
+﻿<Page x:Class="WPFWinkel.LoginScherm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFWinkel"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="LoginScherm">
+
+    <Grid>
+        <TextBox x:Name="gebruikersnaamTextBox" HorizontalAlignment="Left" Height="23" Margin="125,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="wachtwoordTextBox" HorizontalAlignment="Left" Height="23" Margin="125,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="gebruikersnaamLabel" Content="Gebruikersnaam:" HorizontalAlignment="Left" Margin="21,77,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="wachtwoordLabel" Content="Wachtwoord" HorizontalAlignment="Left" Margin="21,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.012,0.294"/>
+        <Button x:Name="inlogButton" Content="Inloggen" HorizontalAlignment="Left" Margin="125,183,0,0" VerticalAlignment="Top" Width="75" Click="inlogButton_Click"/>
+        <Button x:Name="nieuweGebruikerButton" Content="Nieuw gebruiker" HorizontalAlignment="Left" Margin="21,183,0,0" VerticalAlignment="Top" Width="99" Click="nieuweGebruikerButton_Click"/>
+
+    </Grid>
+</Page>

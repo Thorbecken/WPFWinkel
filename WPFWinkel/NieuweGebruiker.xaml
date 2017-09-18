@@ -1,0 +1,26 @@
+﻿<Page x:Class="WPFWinkel.NieuweGebruiker"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFWinkel"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="NieuweGebruiker">
+
+    <Grid>
+        <Label x:Name="gebruikersnaamLabel" Content="Gebruikersnaam:" HorizontalAlignment="Left" Margin="28,79,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="wachtwoordLabel" Content="Wachtwoord" HorizontalAlignment="Left" Margin="28,110,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="voornaamLabel" Content="Voornaam" HorizontalAlignment="Left" Margin="28,141,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="achternaamLabel" Content="Achternaam" HorizontalAlignment="Left" Margin="28,172,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="emailAdresLabel" Content="E-mail adres:" HorizontalAlignment="Left" Margin="28,203,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="gebruikersnaamTextBox" HorizontalAlignment="Left" Height="23" Margin="132,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="wachtwoordTextBox" HorizontalAlignment="Left" Height="23" Margin="132,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="voornaamTextBox" HorizontalAlignment="Left" Height="23" Margin="132,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="achternaamTextBox" HorizontalAlignment="Left" Height="23" Margin="132,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="emailAdresTextBox" HorizontalAlignment="Left" Height="23" Margin="132,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="banierLabel" Content="Nieuw gebruikersnaam aanmaken" FontSize="16" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.127,0.366"/>
+        <Button x:Name="gebruikersnaamAanmaakButton" Content="Aanmaken" HorizontalAlignment="Left" Margin="30,249,0,0" VerticalAlignment="Top" Width="75" Click="gebruikersnaamAanmaakButton_Click"/>
+
+    </Grid>
+</Page>
